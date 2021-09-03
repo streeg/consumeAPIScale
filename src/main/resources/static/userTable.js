@@ -58,9 +58,9 @@ function loadUsers(){
       var content = [];
       for (i = 0; i < users.length; i++){
 
-        let main = `<div class='yanobg' id='tudo lindo aqui'">User ID: `+users[i].id+" Email: "+users[i].email+" First Name: "+users[i].first_name+" Last Name: "+users[i].last_name;
-        let img = `<img src='${users[i].avatar}'></img>`;
-        content.push(main + img + '<br></br>');
+        let main = `</div><div class='cardTemplate'><div class='userId' id='userId'">User ID: `+users[i].id+`</div> <div class='userEmail' id='userEmail'>Email: `+users[i].email+`</div> <div class='firstName' id='firstName'>First Name: `+users[i].first_name+`</div> <div class='lastName'>Last Name: `+users[i].last_name + `</div>`;
+        let img = `<div class='imgLocation'><img class='avatar' src='${users[i].avatar}'></img></div>`;
+        content.push(`<div class='container'> <div class='cardTemplate'>` + img + main + `</div></div>`);
       }
       DisplayList(Slicer(content, current_page, rows), list_elements);
       SetupPagination(content, pagination_element, rows);
