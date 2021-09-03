@@ -14,5 +14,7 @@ http://localhost:9000/pages/all
 # ConsumeMalformedJSON
 
 Access the folder consumeMalformedJSON/
+
 Access src/
+
 In the terminal run: python3 consumeAPI.py
