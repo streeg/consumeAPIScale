@@ -1,4 +1,4 @@
-## consumeAPIScale
+# ConsumeAPIScale
 
 Open in IDE of choice (used vscode);
 
@@ -11,4 +11,8 @@ If you want to access the api pages:
 http://localhost:9000/users/all
 http://localhost:9000/pages/all 
 
+# ConsumeMalformedJSON
 
+Access the folder consumeMalformedJSON/
+Access src/
+In the terminal run: python3 consumeAPI.py
